@@ -112,7 +112,7 @@ app.post("/order/buy", (req: Request, res: Response) => {
         res.json({
             message: "There is no such stock"
         })
-        return 
+        return
     }
 
     if (INR_BALANCES[userId].balance < quantity * price) {
